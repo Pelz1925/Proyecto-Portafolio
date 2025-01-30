@@ -1,0 +1,145 @@
+:root {
+    --color-1: black;
+    --color-2: white;
+    --color-3: aqua;
+    --color-4: grey;
+    --color-5: lightgrey;
+    --color-6: rgb(143, 255, 255);
+    --font-1: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-2: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --size-1: 0.5rem;
+    --size-2: 1rem;
+    --size-3: 1.5rem;
+    --size-4: 2rem;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    height: auto;
+    box-sizing: border-box;
+}
+
+.highlight {
+    color: var(--color-3);
+}
+
+.title {
+    font-family: var(--font-1);
+    font-size: var(--size-4);
+}
+
+.paragraph {
+    font-family: var(--font-2);
+    font-size: var(--size-3);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin: 7% 20% 13% 20%;
+}
+
+.links {
+    display: flex;
+    background-color: var(--color-1);
+    font-family: var(--font-2);
+    font-size: var(--size-2);
+    text-decoration: none;
+    color: var(--color-2);
+    border: 2px solid var(--color-3);
+    width: 50%;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: var(--size-1);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.image {
+    width: 50%;
+    border-radius: 10%;
+}
+
+.links:hover {
+    background-color: var(--color-4);
+}
+
+.links:active {
+    background-color: var(--color-5);
+    color: var(--color-1);
+}
+
+.footer {
+    display: flex;
+    font-family: var(--font-1);
+    font-size: var(--size-3);
+    background-color: var(--color-3);
+    color: var(--color-1);
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+}
+
+.navigation {
+    padding: 5% 0% 0% 20%;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links {
+    font-family: var(--font-1);
+    font-size: var(--size-3);
+    color: var(--color-3);
+    text-decoration: none;
+}
+
+.nav-links:active {
+    color: var(--color-6);
+}
+
+@media (max-width: 1200px) {
+    
+    .navigation {
+        padding: 10% 0% 0% 0%;
+    }
+
+    .nav-buttons {
+        justify-content: center;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        width: auto;
+    }
+
+    .links {
+        width: 70%;
+    }
+}
